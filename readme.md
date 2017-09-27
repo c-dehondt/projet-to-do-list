@@ -1,4 +1,4 @@
-# project to do list (php)#
+# project to do list (php) #
 
 ## context of the project ##
 We are software developer for the company Software & Telecom, a customer,Mr. MOREAU, has ordered you a software of which you are in charge of the realization.
