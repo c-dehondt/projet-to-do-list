@@ -37,9 +37,9 @@
   </a>
   <ul>
     <li>
-      <form action="php/admin.php"  method="post">
+      <form action="index.php"  method="post">
         <input type="hidden" name="newAdmin">
-        <button class="btn-floating red" type="submit"><i class="material-icons">person</i></button>
+        <button class="btn-floating red" type="submit"><i class="material-icons">person-add</i></button>
       </form>
     </li>
   </ul>

@@ -1,47 +1,46 @@
-<section class="row center">
+<section class="row">
 
-<div class="center-align truncate col s12 m6">
-  <div class="card">
-    <div class="card-content">
-      <span class="card-title">Admin</span>
-      <div class="row">
-       <form class="col s12" action="php/controler/admin/admin_controler.php" method="post">
+<div class="card col s12 m6">
+  <h2>New User</h2>
 
-         <div class="row">
-           <div class="input-field col s6">
-              <input  id="name" name="nameAdmin" type="text" class="validate">
-              <label for="name">Pseudo</label>
-            </div>
-          <div>
+<div class="card-content row">
+  <form action="php/controler/admin/newadmin_controler.php" method="post" >
 
-          <div class="row">
-             <div class="input-field col s12">
-               <input id="code" name="passwordAdmin" type="text" class="validate">
-               <label for="code">Mot de passe</label>
-             </div>
-           </div>
-         </div>
+    <!-- name newuser -->
+      <div class="input-field col s6">
+        <input id="name" type="text" name="name" class="validate">
+        <label for="name">name</label>
+      </div>
 
-       <div class="card-action">
-         <input class="waves-effect waves-light btn" type="submit" value="valider">
-       </div>
-     </form>
-     </div>
-     </div>
+    <!-- first_name newuser -->
+      <div class="input-field col s6">
+        <input id="first_name" type="text" name="first_name" class="validate">
+        <label for="first_name">first name</label>
+      </div>
+
+      <!-- age newuser -->
+      <div class="input-field col s6">
+        <input id="age" type="number" name="age" class="validate">
+        <label for="age">age</label>
+      </div>
+
+    <!-- Email newuser -->
+      <div class="input-field col s6">
+        <input id="email" type="email" name="email" class="validate">
+        <label for="email">Email</label>
+      </div>
+
+    <!-- password new user -->
+    <div class="input-field col s6">
+      <input id="password" type="password" name="password" class="validate">
+      <label for="password">password</label>
     </div>
+
+
+    <div class="card-action">
+      <input class="waves-effect waves-light btn" type="submit" value="valider">
+    </div>
+  </form>
   </div>
-</div>
-<div class="fixed-action-btn click-to-toggle">
-  <a class="btn-floating btn-large red">
-    <i class="material-icons">mode_edit</i>
-  </a>
-  <ul>
-    <li>
-      <form action="php/admin.php"  method="post">
-        <input type="hidden" name="newAdmin">
-        <button class="btn-floating red" type="submit"><i class="material-icons">person</i></button>
-      </form>
-    </li>
-  </ul>
 </div>
 </section>
