@@ -1,6 +1,7 @@
 <?php
 session_start();
-require 'php/modele/admin/admin_modele.php';
+require '../../../php/modele/connexion_sql.php';
+require '../../../php/modele/admin/admin_modele.php';
 
 $name = $_POST["nameAdmin"];
 $password = sha1($_POST['passwordAdmin']);
@@ -18,7 +19,7 @@ if ($admins){
   $_SESSION['name'] = $name;
   // var_dump($_SESSION['pseudo']);
   // var_dump($_SESSION['id']);
-  header('location: ../../../index.php');
+  header('location: ../../../php/project.php');
 }
 require 'php/admin.php';
   ?>
