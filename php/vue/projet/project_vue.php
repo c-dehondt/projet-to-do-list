@@ -1,18 +1,25 @@
-<?php  foreach ($projects as $project):?>
+<?php if ($projects): ?>
 
-<div class="card row">
-  <p class="col s2"><?php echo $project['title'] ?></p>
-  <p class="col s2"><?php echo $project['dateline'] ?></p>
-  <p class="col s2"> <?php echo $project['customer'] ?></p>
-  <p class="col s2"><?php echo $project['status'] ?></p>
+  <?php  foreach($projects as $project):?>
 
-  <a class="col s1 btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
-  <a class="col s1 btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+    <div class="card">
+      <div class="content row">
+      <p class="col s2"><?php echo $project['title'] ?></p>
+      <p class="col s2"><?php echo $project['dateline'] ?></p>
+      <p class="col s2"> <?php echo $project['customer'] ?></p>
+      <p class="col s2"><?php echo $project['status'] ?></p>
+      <div class="col s2">
+        <a class=" btn-floating waves-effect waves-light red"><i class="material-icons">add</i></a>
+        <a class=" btn-floating waves-effect waves-light red"><i class="material-icons">add</i></a>
+      </div>
+  </div>
+  </div>
 
-</div>
+  <?php endforeach; ?>
 
-<?php endforeach; ?>
-
+<?php else: ?>
+  <h2>Aucun projet</h2>
+<?php endif; ?>
 
 
 <div class="fixed-action-btn click-to-toggle">

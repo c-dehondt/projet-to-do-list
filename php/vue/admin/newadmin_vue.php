@@ -5,6 +5,7 @@
 
 <div class="card-content row">
   <form action="php/controler/admin/newadmin_controler.php" method="post" >
+    <div class="row">
 
     <!-- name newuser -->
       <div class="input-field col s6">
@@ -36,11 +37,12 @@
       <label for="password">password</label>
     </div>
 
-
-    <div class="card-action">
-      <input class="waves-effect waves-light btn" type="submit" value="valider">
-    </div>
-  </form>
   </div>
-</div>
+
+      <div class="card-action">
+        <input class="waves-effect waves-light btn" type="submit" value="valider">
+      </div>
+    </form>
+    </div>
+  </div>
 </section>

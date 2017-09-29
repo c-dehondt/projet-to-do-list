@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 require '../../../php/modele/connexion_sql.php';
 require '../../../php/modele/admin/admin_modele.php';
 
@@ -14,12 +15,14 @@ foreach ($admin as $cle => $admins) {
   $admin[$cle]["name"]=$admins['name'];
 }
 
-if ($admins){
+if (!$admin) {
+  echo "echec connexion";
+
+
+}else {
   $_SESSION['id'] = $admins["id"];
-  $_SESSION['name'] = $name;
-  // var_dump($_SESSION['pseudo']);
-  // var_dump($_SESSION['id']);
-  header('location: ../../../php/project.php');
+  $_SESSION['name'] = $admins['name'];
+  header('location:../../../php/project.php');
 }
-require 'php/admin.php';
+
   ?>
