@@ -1,13 +1,14 @@
 <?php
 session_start();
-require 'modele/connexion_sql.php';
-require 'modele/projet/new-project_modele.php';
+require '../../../php/modele/connexion_sql.php';
+require '../../../php/modele/projet/new-project_modele.php';
 
+$id_session = $_SESSION['id'];
 $title = $_POST['title'];
 $dateline = $_POST['dateline'];
 $customer = $_POST['customer'];
-$id_session = $_SESSION['id'];
 
-newproject($title, $dateline, $customer, $id_session);
-require 'project.php';
+newproject($id_session,$title, $dateline, $customer);
+
+require '../../../php/vue/projet/new-project_vue.php';
 ?>

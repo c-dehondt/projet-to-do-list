@@ -28,7 +28,7 @@
   </a>
   <ul>
     <li>
-      <form action="../php/project.php"  method="post">
+      <form action="php/controler/projet/new-project_controler.php"  method="post">
         <input type="hidden" name="newproject">
         <button class="btn-floating red" type="submit"><i class="material-icons">create</i></button>
       </form>

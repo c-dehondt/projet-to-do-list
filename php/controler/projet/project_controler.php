@@ -1,14 +1,16 @@
 <?php
-require 'modele/connexion_sql.php';
-require 'modele/projet/project_modele.php';
-
-$projects=projects();
+require_once 'php/modele/connexion_sql.php';
+require 'php/modele/projet/project_modele.php';
+$admin = $_SESSION['id'];
+$projects = projects($admin);
+if ($projects) {
 
 foreach ($projects as $cle => $project) {
   $projects[$cle]['title'] = htmlspecialchars($project['title']);
-  $projects[$cle]['dateline'] =nl2br(htmlspecialchars($project['dateline']));
-  $projects[$cle]['customer'] =nl2br(htmlspecialchars($project['customer']));
-  $projects[$cle]['status'] = nl2br(htmlspecialchars($project['status']));
+  $projects[$cle]['dateline'] =htmlspecialchars($project['dateline']);
+  $projects[$cle]['customer'] =htmlspecialchars($project['customer']);
+  $projects[$cle]['status'] = htmlspecialchars($project['status']);
 }
-require 'vue/projet/project_vue.php'
+}
+require 'php/vue/projet/project_vue.php'
 ?>

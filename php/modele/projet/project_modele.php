@@ -1,12 +1,15 @@
 <?php
-function projects()
+function projects($admin)
 {
   global $bdd;
 
-  $reponse = $bdd->query('SELECT * FROM project INNER JOIN admin ON admin.id = project.id_admin ');
+  $reponse = $bdd->prepare('SELECT * FROM project WHERE id_admin = :admin');
+  $reponse->execute(array(
+   'admin' => $admin
+    ));
 
-  $projects=$reponse->fetchAll();
+      $projects=$reponse->fetchAll();
+      return $projects;
 
-  return $projects;
 }
 ?>

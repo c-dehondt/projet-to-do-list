@@ -1,7 +1,6 @@
 <?php
 session_start();
-
-require '../../../php/modele/connexion_sql.php';
+require'../../../php/modele/connexion_sql.php';
 require '../../../php/modele/admin/admin_modele.php';
 
 $name = $_POST["nameAdmin"];
@@ -15,14 +14,11 @@ foreach ($admin as $cle => $admins) {
   $admin[$cle]["name"]=$admins['name'];
 }
 
-if (!$admin) {
-  echo "echec connexion";
-
-
-}else {
+if ($admin) {
+  header('location: ../../../index.php');
   $_SESSION['id'] = $admins["id"];
   $_SESSION['name'] = $admins['name'];
-  header('location:../../../php/project.php');
+
 }
 
   ?>
