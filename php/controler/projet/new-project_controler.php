@@ -9,6 +9,6 @@ $dateline = $_POST['dateline'];
 $customer = $_POST['customer'];
 
 newproject($id_session,$title, $dateline, $customer);
+header('location: ../../../index.php');
 
-require '../../../php/vue/projet/new-project_vue.php';
 ?>

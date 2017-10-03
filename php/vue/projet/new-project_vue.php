@@ -3,7 +3,7 @@
   <h2>New Project</h2>
 
 <div class="card-content row">
-  <form action="controler/projet/new-project_controler.php" method="post" >
+  <form action="php/controler/projet/new-project_controler.php" method="post" >
       <div class="row">
     <!-- title the new project -->
       <div class="input-field col s6">

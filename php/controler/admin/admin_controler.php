@@ -18,7 +18,6 @@ if ($admin) {
   header('location: ../../../index.php');
   $_SESSION['id'] = $admins["id"];
   $_SESSION['name'] = $admins['name'];
-
 }
 
   ?>

@@ -7,7 +7,11 @@ session_start();
         require 'php/controler/admin.php';
 
       }else {
-        require 'php/controler/project.php';
+        if (isset($_POST['detail'])) {
+          require 'php/controler/detail.php';
+        }else {
+          require 'php/controler/project.php';
+        }
       }
 
       require 'php/vue/footer.php';
