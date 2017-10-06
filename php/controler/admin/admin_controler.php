@@ -1,7 +1,6 @@
 <?php
 session_start();
-require'../../../php/modele/connexion_sql.php';
-require '../../../php/modele/admin/admin_modele.php';
+require '../../modele/admin/admin_modele.php';
 
 $name = $_POST["nameAdmin"];
 $password = sha1($_POST['passwordAdmin']);

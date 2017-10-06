@@ -1,9 +1,9 @@
-<main class="container">
+<?php
+if (!isset($_POST['details']) OR isset($_POST['customer']) OR isset($_POST['tache'])) {
+  
+  require 'php/controler/detail/customer_controler.php';
 
-<?php if (isset($_POST['detail'])): ?>
-    <?php require 'php/controler/detail/customer_controler.php' ?>
-  <?php endif; ?>
-
-
-
-</main>
+}else {
+  require 'php/controler/detail/newcustomer_controler.php';
+}
+?>

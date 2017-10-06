@@ -1,4 +1,6 @@
 <?php
+function getdatabase()
+{
 
 // Connexion à la base de données
 try
@@ -9,4 +11,6 @@ try
 catch(Exception $e)
 {
         die('Erreur : '.$e->getMessage());
+}
+return $bdd;
 }

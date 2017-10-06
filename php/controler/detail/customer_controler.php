@@ -1,16 +1,12 @@
 <?php
 session_start();
-require_once 'php/modele/connexion_sql.php';
 require 'php/modele/detail/customer_modele.php';
 
 
-$project = $_SESSION['id'];
-$contributor = customer($project);
-if ($contributors) {
+$test2=test($_POST['detail']);
+$contributors = customer($_POST['detail']);
 
-foreach ($contributors as $cle => $contributor) {
-  $contributors[$cle]['contributor'] = htmlspecialchars($contributor['contributor']);
-    }
-  }
+require_once'php/controler/todolist/job.php';
+
 require 'php/vue/detail/detail_vue.php'
 ?>

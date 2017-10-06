@@ -1,7 +1,6 @@
-<footer class="container-fluid footer">
+<footer class="container-fluid footer col s12">
     <div class="container">
         <div class="footer1">
-            <a href="php/controler/admin/deconnexion.php">deconnexion</a>
             <p id="fin"> © Copyright 2017 Générer mentions légales | Mentions légales | <a href="" id="me-contact"> Me contacter </a></p>
             <i id="twitter" class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
             <i id="linkedin" class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>

@@ -1,4 +1,4 @@
-<main class="container">
+<main class="row">
 <p> <?php echo $_SESSION['name'] ?></p>
 
   <?php if (!isset($_POST['newAdmin'])): ?>
@@ -8,7 +8,6 @@
   <?php else: ?>
     <?php
     require 'php/vue/admin/newadmin_vue.php';
-    // require 'php/controler/admin/newadmin_controler.php';
     ?>
   <?php endif; ?>
 

@@ -16,4 +16,4 @@
 
         <script src="https://use.fontawesome.com/40917ba2bf.js"></script>
     </head>
-    <body>
+    <body class="row">

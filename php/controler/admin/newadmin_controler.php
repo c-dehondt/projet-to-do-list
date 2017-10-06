@@ -1,6 +1,5 @@
 <?php
-require '../../../php/modele/connexion_sql.php';
-require '../../../php/modele/admin/newadmin_modele.php';
+require '../../modele/admin/newadmin_modele.php';
 
 $name = $_POST['name'];
 $first_name = $_POST['first_name'];

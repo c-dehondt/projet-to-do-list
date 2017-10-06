@@ -1,15 +1,27 @@
 <?php
-function customer($project)
+require_once 'php/modele/connexion_sql.php';
+
+function test($project_id){
+  $bdd=getdatabase();
+
+  $req= $bdd->prepare('SELECT * FROM project WHERE id = :id_project');
+  $req->execute(array(
+    'id_project'=>$project_id
+  ));
+  $test2=$req->fetch();
+  return $test2;
+}
+
+function customer($project_id)
 {
-  global $bdd;
+    $bdd=getdatabase();
 
   //  customer
-  $req = $bdd->prepare('SELECT * FROM contributor WHERE id_project = :project');
+  $req = $bdd->prepare('SELECT id, contributor_name, dateline FROM contributor WHERE id_project = :project_id');
   $req->execute(array(
-    'project'=>$project
+    'project_id'=>$project_id
     ));
-
-    $newcustomer=$req->fetchAll();
-    return $newcustomer;
+    $customer=$req->fetchAll();
+    return $customer;
   }
 ?>

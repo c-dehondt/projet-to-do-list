@@ -1,6 +1,5 @@
 
-<div class="card col s12 m6">
-  <h2>New Project</h2>
+
 
 <div class="card-content row">
   <form action="php/controler/projet/new-project_controler.php" method="post" >
@@ -29,4 +28,3 @@
         </div>
       </form>
     </div>
-  </div>

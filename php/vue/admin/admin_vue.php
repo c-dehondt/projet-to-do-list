@@ -1,6 +1,6 @@
-<section class="row center">
+<section class="">
 
-<div class="center-align truncate col s12 m6">
+<div class="truncate col s12 m6">
   <div class="card">
     <div class="card-content">
       <span class="card-title">Admin</span>
