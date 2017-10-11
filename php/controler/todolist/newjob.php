@@ -1,11 +1,10 @@
 <?php
-require '../../modele/todolist/newjob_modele.php';
+require '../../modele/todolist/newjob.php';
 
 
-$id_contributor =$_POST['details'];
-$jobs = $_POST['job'];
+$id_contributor =$_POST['tache2'];
+$jobs = $_POST['newjob'];
 
-
-newcustomer($id_contributor, $jobs);
-header('location: ../../../index.php');
+newjob($id_contributor, $jobs);
+header( 'location:../../../index.php');
 ?>

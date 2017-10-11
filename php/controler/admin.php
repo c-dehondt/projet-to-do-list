@@ -1,4 +1,4 @@
-<main class="row">
+<main class="container row">
 <p> <?php echo $_SESSION['name'] ?></p>
 
   <?php if (!isset($_POST['newAdmin'])): ?>

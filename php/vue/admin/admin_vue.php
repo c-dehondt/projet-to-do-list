@@ -16,7 +16,7 @@
 
           <div class="row">
              <div class="input-field col s12">
-               <input id="code" name="passwordAdmin" type="text" class="validate">
+               <input id="code" name="passwordAdmin" type="password" class="validate">
                <label for="code">Mot de passe</label>
              </div>
            </div>

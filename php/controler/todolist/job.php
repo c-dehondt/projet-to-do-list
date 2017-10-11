@@ -7,6 +7,4 @@ $id_contributor2=id_contributor($test2['id']);
 
 $jobs = job($_POST['tache']);
 
-
-
 ?>

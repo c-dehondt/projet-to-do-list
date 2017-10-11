@@ -13,7 +13,6 @@ function id_contributor($contributor_id){
 }
 
 
-
 function job($contributor_id)
 {
     $bdd=getdatabase();

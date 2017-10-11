@@ -1,7 +1,7 @@
 <?php
 if (isset($_POST['tache'])) {
-
+  require 'php/controler/todolist/newjob.php';
 }else {
 }
- require 'php/vue/todolist/job.php';
+ require 'php/controler/todolist/job.php';
  ?>
