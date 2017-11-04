@@ -1,3 +1,5 @@
+</main>
+
 <footer class="container-fluid footer col s12">
     <div class="container">
         <div class="footer1">

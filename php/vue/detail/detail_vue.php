@@ -3,25 +3,6 @@
 <section class="container row">
   <h2>projet</h2>
 
-
-  <ul class="collapsible" data-collapsible="accordion">
-    <li>
-      <div class="collapsible-header">
-        <i class="material-icons">filter_drama</i>
-        First
-        <span class="new badge">4</span></div>
-      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-    </li>
-
-    <li>
-      <div class="collapsible-header">
-        <i class="material-icons">place</i>
-        Second
-        <span class="badge">1</span></div>
-      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-    </li>
-  </ul>
-
    <article class="row col s3 card blue-grey darken-1 white-text">
         <div class="col s10">
               <h4 class="card-title">
